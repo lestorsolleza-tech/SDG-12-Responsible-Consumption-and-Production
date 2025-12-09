@@ -1,0 +1,555 @@
+<!-- FILE: food.html -->
+<!-- PURPOSE: Food Conservation & Waste Reduction page for SDG 12 system
+     UPDATED: December 2024 with latest UNEP 2024 data
+     CHANGES: Updated statistics to UNEP Food Waste Index Report 2024 (March 27, 2024),
+              added source citations, improved accessibility -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food – SDG 12</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="bg-light py-3 shadow-sm mb-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-2">
+        <img src="image/Logo.png" alt="SDG 12 Logo" width="40" height="40">
+        <h1 class="h5 mb-0">SDG 12: Responsible Consumption & Production</h1>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#">Targets</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="food.html">Food</a></li>
+              <li><a class="dropdown-item" href="energy.html">Energy</a></li>
+              <li><a class="dropdown-item" href="water.html">Water</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="container mb-5">
+
+    <!-- Intro / Hero -->
+    <section class="text-center mb-5">
+      <h2><strong>Food Conservation & Sustainability</strong></h2>
+      <p>Learn about food waste — its causes, impacts and how you can help reduce it. Discover proper storage, smart consumption, and food-label awareness to build a sustainable food culture.</p>
+      
+      <!-- UPDATED: Latest global statistics with source -->
+      <div class="alert alert-info mt-3">
+        <strong>Global Impact:</strong> In 2022, <strong>1.05 billion tonnes</strong> of food waste were generated globally 
+        (≈132 kg per person), representing ~19% of food available to consumers. About <strong>60%</strong> (631 million tonnes) 
+        occurred at the household level.
+        <br><small class="text-muted">Source: UNEP Food Waste Index Report 2024, published March 27, 2024 
+        | <a href="https://www.unep.org/resources/publication/food-waste-index-report-2024" target="_blank" class="text-decoration-none">View Report →</a></small>
+      </div>
+    </section>
+
+    <div id="food-carousel" class="carousel slide mb-5" 
+         data-bs-ride="carousel" 
+         data-bs-interval="3000">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-image-frame">
+                    <img src="image/food-preservation-1.avif" 
+                         class="d-block" 
+                         alt="Food preservation methods">
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel-image-frame">
+                    <img src="image/food-preservation-2.jpg" 
+                         class="d-block" 
+                         alt="Sustainable food practices">
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" 
+                data-bs-target="#food-carousel" 
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-label="Previous"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" 
+                data-bs-target="#food-carousel" 
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-label="Next"></span>
+        </button>
+    </div>
+
+  <hr style="border: 1px solid #444;">
+
+
+    <!-- SECTION: Causes (visible) -->
+    <section class="mb-5">
+      <h3>What Causes Food Waste?</h3>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <ul>
+            <li><strong>Overproduction:</strong> More food is produced than needed, often leading to surplus spoilage.</li>
+            <li><strong>Poor Storage & Handling:</strong> Inadequate refrigeration, transport delays, or poor packaging shorten shelf life.</li>
+            <li><strong>Consumer Behavior:</strong> Overbuying, neglecting to check inventory, or misunderstanding expiration labels.</li>
+            <li><strong>Distribution & Supply Chain Losses:</strong> Food lost or wasted in transit or storage before even reaching consumers.</li>
+          </ul>
+          <!-- UPDATED: Added local research context -->
+          <div class="alert alert-warning mt-3">
+            <strong>Local Research Finding:</strong> Studies near WVSU Janiuay Campus show that 57% of households practice meal planning 
+            and proper food storage, yet 28% still prepare more food than necessary, leading to leftovers or spoilage.
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="image/foodwaste.webp" width="350" height="180" class="img-fluid rounded" alt="Food waste illustration showing various discarded foods">
+        </div>
+      </div>
+    </section>
+
+    <hr style="border: 1px solid #444;">
+
+
+    <!-- ACCORDION: Info Sections -->
+    <div class="accordion" id="foodAccordion">
+
+      <!-- Impact -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#impact" aria-expanded="true">
+            Impact of Food Waste
+          </button>
+        </h2>
+        <div id="impact" class="accordion-collapse collapse show" data-bs-parent="#foodAccordion">
+          <div class="accordion-body">
+            <p>Food waste doesn't only affect what's on your plate — it impacts communities, economies, and the environment.</p>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="info-card">
+                  <h5>Environmental</h5>
+                  <p>Wasted food produces greenhouse gases (like methane) when decomposed, contributing to climate change. 
+                  Food waste generates <strong>8-10% of global GHG emissions</strong> — 5 times more than the aviation sector.</p>
+                  <small class="text-muted">Source: UNEP 2024</small>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="info-card">
+                  <h5>Economic</h5>
+                  <p>Globally, billions worth of food are lost or wasted every year — economic loss for producers and consumers alike. 
+                  The value of wasted food represents a significant drain on household budgets worldwide.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="info-card">
+                  <h5>Social</h5>
+                  <p>Food that's wasted could instead help feed people who lack reliable access to nutritious meals. 
+                  While 1.05 billion tonnes are wasted annually, hundreds of millions face food insecurity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sustainable Choices -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#choices">
+            Sustainable Food Choices
+          </button>
+        </h2>
+        <div id="choices" class="accordion-collapse collapse" data-bs-parent="#foodAccordion">
+          <div class="accordion-body">
+            <p>Adopting sustainable habits helps reduce waste and supports healthy ecosystems:</p>
+            <ul>
+              <li>Plan meals and shop wisely — buy only what you need.</li>
+              <li>Increase plant-based meals to reduce resource strain.</li>
+              <li>Support local farmers / markets to cut transport emissions.</li>
+              <li>Avoid excessive packaging and choose reusable containers.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="border: 1px solid #444;">
+
+
+    <!-- Food Labels (with images) -->
+    <section class="mb-5">
+      <h3 class="mb-4">Food Expiration & Quality Labels</h3>
+      <p>Labels like "Best Before," "Use By," or "Sell By" help consumers and retailers, but many people misunderstand what they mean.</p>
+
+      <div class="row g-4 text-center">
+
+        <div class="col-md-4 d-flex">
+          <div class="summary-card w-100">
+            <img src="image/reduce_food_waste.webp"
+                 class="img-fluid rounded"
+                 style="width:200px;height:150px;object-fit:cover;"
+                 alt="Reducing food waste">
+            <h5 class="mt-3"><strong>Best Before</strong></h5>
+            <p>
+              This indicates when the product is expected to be at peak quality (taste, texture). 
+              Food is often still safe to eat after this date.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex">
+          <div class="summary-card w-100">
+            <img src="image/local_food.avif"
+                 class="img-fluid rounded"
+                 style="width:200px;height:150px;object-fit:cover;"
+                 alt="Local sustainable food">
+            <h5 class="mt-3"><strong>Use By</strong></h5>
+            <p>
+              For perishables—consider this date as the final safe-to-consume date (especially for meat, dairy, etc.).
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex">
+          <div class="summary-card w-100">
+            <img src="image/composting.webp"
+                 class="img-fluid rounded"
+                 style="width:200px;height:150px;object-fit:cover;"
+                 alt="Composting food waste">
+            <h5 class="mt-3"><strong>Sell By</strong></h5>
+            <p>
+              Used by stores to manage stock; not a safety or expiration date for consumers.
+            </p>
+          </div>
+        </div>
+
+        <p class="mt-3">
+          <strong>Important:</strong> Except for highly perishable items (like meat, dairy), many foods are still safe after these dates — 
+          but always check smell, texture and appearance before consuming.
+        </p>
+      </div>
+    </section>
+
+    <hr style="border: 1px solid #444;">
+
+    
+    <!-- Global vs Local Food Waste -->
+    <section class="mt-5 mb-5">
+      <h3>Global vs Local Food Waste</h3>
+
+      <div class="row g-4 align-items-center">
+        
+        <div class="col-md-6">
+          <p>
+            In many developing countries, food waste occurs mostly during production, transport, and storage because of inadequate infrastructure — 
+            long before it reaches consumers. Meanwhile, in more urbanized or developed regions, a large portion of waste happens at the consumer 
+            or retail level due to overbuying, misunderstanding expiration labels, or improper storage.
+          </p>
+          <p>
+            <strong>Key Finding:</strong> UNEP 2024 data shows household food waste levels differ by only 7 kg per capita between high-income 
+            and low-income countries, suggesting the problem is universal and not solely linked to affluence.
+          </p>
+          <p>
+            Addressing both sides — supply chain and consumer behavior — is key to reducing global food waste.
+          </p>
+        </div>
+
+        <div class="col-md-6 text-center">
+          <img src="image/foodwaste.webp" 
+               width="350" 
+               height="200" 
+               class="img-fluid rounded" 
+               alt="Global food waste distribution">
+        </div>
+
+      </div>
+    </section>
+
+    <hr style="border: 1px solid #444;">
+
+
+    <!-- Technology & Preservation -->
+    <section class="mb-5">
+      <h3>Technology & Food Preservation</h3>
+      <ul>
+        <li>Smart refrigeration and temperature-controlled storage to prolong shelf life.</li>
+        <li>Food-tracking apps that help monitor expiry dates and consumption before spoilage.</li>
+        <li>Vacuum sealing, preserving, and proper packaging to reduce exposure and spoilage.</li>
+        <li>High-Pressure Processing (HPP) to kill pathogens without heat, preserving fresh quality.</li> 
+        <li>Modified Atmosphere Packaging (MAP) to replace air with gas mixtures, inhibiting bacterial growth and oxidation.</li>
+        <li>Controlled Food Irradiation using radiation (e-beam/gamma) to eliminate pathogens and insects, extending shelf life.</li>
+        <li>Aseptic Processing and UHT Treatment to rapidly sterilize liquid food for long term, non-refrigerated storage.</li>
+      </ul>
+    </section>
+
+    <hr style="border: 1px solid #444;">
+
+
+    <!-- Myths & Facts -->
+    <section class="mb-5">
+      <h3>Common Myths & Facts</h3>
+
+      <div class="accordion" id="mythAccordion">
+
+        <!-- Myth 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#myth1">
+              Myth 1: Food is unsafe to eat once it passes the "Best Before" date
+            </button>
+          </h2>
+          <div id="myth1" class="accordion-collapse collapse" data-bs-parent="#mythAccordion">
+            <div class="accordion-body">
+              <strong>Fact:</strong> The "Best Before" date refers to food quality, not safety.
+              Many foods like rice, pasta, canned goods, and snacks remain safe when stored properly.
+            </div>
+          </div>
+        </div>
+
+        <!-- Myth 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#myth2">
+              Myth 2: Leftover food should be thrown away after one day
+            </button>
+          </h2>
+          <div id="myth2" class="accordion-collapse collapse" data-bs-parent="#mythAccordion">
+            <div class="accordion-body">
+              <strong>Fact:</strong> Properly stored leftovers can stay safe for 3–4 days
+              in the refrigerator when kept in airtight containers.
+            </div>
+          </div>
+        </div>
+
+        <!-- Myth 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#myth3">
+              Myth 3: Food waste at home is too small to make a difference
+            </button>
+          </h2>
+          <div id="myth3" class="accordion-collapse collapse" data-bs-parent="#mythAccordion">
+            <div class="accordion-body">
+              <strong>Fact:</strong> Household food waste makes up 60% of total food waste globally (631 million tonnes in 2022).
+              Small actions by many people create a huge impact.
+              <br><small class="text-muted">Source: UNEP 2024</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Myth 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#myth4">
+              Myth 4: Only spoiled or rotten food counts as food waste
+            </button>
+          </h2>
+          <div id="myth4" class="accordion-collapse collapse" data-bs-parent="#mythAccordion">
+            <div class="accordion-body">
+              <strong>Fact:</strong> Food waste includes perfectly edible food that is thrown away
+              due to overbuying, poor planning, or misunderstanding labels.
+            </div>
+          </div>
+        </div>
+
+        <!-- Myth 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#myth5">
+              Myth 5: Donating food is difficult and ineffective
+            </button>
+          </h2>
+          <div id="myth5" class="accordion-collapse collapse" data-bs-parent="#mythAccordion">
+            <div class="accordion-body">
+              <strong>Fact:</strong> Many food banks and community organizations safely accept
+              and distribute donated food to people in need.
+            </div>
+          </div>
+        </div>
+
+        <!-- Myth 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#myth6">
+              Myth 6: Organic food does not contribute to food waste
+            </button>
+          </h2>
+          <div id="myth6" class="accordion-collapse collapse" data-bs-parent="#mythAccordion">
+            <div class="accordion-body">
+              <strong>Fact:</strong> Organic food can spoil faster due to the lack of preservatives
+              and still contributes to waste if not stored properly.
+            </div>
+          </div>
+        </div>
+
+        <!-- Myth 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#myth7">
+              Myth 7: Food waste only affects the environment
+            </button>
+          </h2>
+          <div id="myth7" class="accordion-collapse collapse" data-bs-parent="#mythAccordion">
+            <div class="accordion-body">
+              <strong>Fact:</strong> Food waste also impacts the economy and society,
+              wasting money, resources, and worsening food insecurity.
+            </div>
+          </div>
+        </div>
+
+        <!-- Myth 8 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#myth8">
+              Myth 8: Composting fully solves the food waste problem
+            </button>
+          </h2>
+          <div id="myth8" class="accordion-collapse collapse" data-bs-parent="#mythAccordion">
+            <div class="accordion-body">
+              <strong>Fact:</strong> Composting helps reduce landfill waste, but preventing
+              food waste before it happens is the most effective solution under SDG 12.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr style="border: 1px solid #444;">
+
+
+    <!-- What You Can Do (Action) -->
+    <section class="mb-5">
+      <h3>What You Can Do Today</h3>
+      <ul>
+        <li>Check your food storage and dispose only when spoilage signs appear (not just by date).</li>
+        <li>Plan weekly meals to avoid overbuying and reduce waste.</li>
+        <li>Compost or properly dispose of organic waste.</li>
+        <li>Share excess or near-expiry food responsibly instead of throwing away immediately.</li>
+        <li>Label and date leftovers to ensure you use them before they go bad.</li>
+        <li>Freeze excess food like herbs, meat, or cooked meals for future use.</li>
+      </ul>
+    </section>
+
+    <!-- ================= ENDING SECTION ================= -->
+
+    <hr style="border: 1px solid #444;">
+
+
+    <section class="food-summary text-center">
+      <h2 class="mb-4">Key Takeaways on Food Conservation</h2>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="summary-card">
+            <img src="image/reduce_food_waste.webp" 
+                 class="img-fluid rounded"
+                 alt="Reduce household food waste"
+                 style="width:200px;height:150px;object-fit:cover;">
+            <h5><strong>Waste at Households</strong></h5>
+            <p>
+              Planning meals, storing food correctly, and understanding expiration labels
+              can significantly reduce household food waste—which accounts for 60% of global total.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="summary-card">
+            <img src="image/local_food.avif" 
+                 class="img-fluid rounded"
+                 alt="Choose sustainable local food"
+                 style="width:200px;height:150px;object-fit:cover;">
+            <h5><strong>Choose Sustainably</strong></h5>
+            <p>
+              Supporting local produce and reducing overconsumption helps lower emissions
+              and strengthens local food systems.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="summary-card">
+            <img src="image/composting.webp"
+                 class="img-fluid rounded"
+                 alt="Take action to compost"
+                 style="width:200px;height:150px;object-fit:cover;">
+            <h5><strong>Take Action Today</strong></h5>
+            <p>
+              Small actions such as composting, donating surplus food, and sharing awareness
+              contribute to global sustainability goals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr style="border: 1px solid #444;">
+
+    <!-- VIDEO SECTION -->
+<h3 class="text-center mb-5">Responsible Consumption and Production for a Sustainable Future</h3>
+<div class="video-wrapper">
+    <video controls>
+        <source src="video/Methods_of_Food_Preservation___Food_Poisoning___Microorganisms___Biology___Home_Revise(480p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<style>
+    .video-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+    }
+
+    .video-wrapper video {
+        width: 80%;        /* Adjust size */
+        max-width: 800px;  /* Maximum width */
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    </style>
+    <p class="small text-muted">Source: <a href="https://youtu.be/IltDWHRIgkY?si=77VyH7KWkNs7jJvt" target="_blank">Food Conservation</a></p>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section text-center mt-5">
+      <h3>Be Part of the SDG 12 Movement</h3>
+      <p>
+        Responsible consumption starts with informed choices.  
+        Apply what you've learned today and inspire others to reduce food waste.
+      </p>
+
+      <div class="d-flex justify-content-center gap-3 mt-3">
+        <a href="energy.html" class="btn btn-outline-success">Energy Conservation</a>
+        <a href="water.html" class="btn btn-outline-primary">Water Conservation</a>
+      </div>
+    </section>
+
+    <!-- DATA SOURCE FOOTER -->
+    <footer class="sdg-footer mt-5 p-4 bg-light rounded">
+      <p class="mb-2"><strong>Data Sources for This Page:</strong></p>
+      <ul class="list-unstyled small">
+        <li>• UNEP (2024). Food Waste Index Report 2024. Published March 27, 2024. 
+          <a href="https://www.unep.org/resources/publication/food-waste-index-report-2024" target="_blank">View Report</a></li>
+        <li>• FAO. Food waste and loss statistics. <a href="https://www.fao.org" target="_blank">fao.org</a></li>
+        <li>• Local research from WVSU Janiuay Campus household study (2024)</li>
+      </ul>
+      <p style="text-align: center;" class="small text-muted mb-0">This content supports <strong>UN Sustainable Development Goal 12</strong> | Last Updated: June 2025</p>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

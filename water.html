@@ -1,0 +1,444 @@
+<!-- FILE: water.html -->
+<!-- PURPOSE: Water Conservation & Access page for SDG 12 system
+     UPDATED: December 2024 with latest WHO/UNICEF JMP 2025 data
+     CHANGES: Updated statistics to JMP Report 2025 (August 26, 2025),
+              added source citations, aligned with research data -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water - SDG 12</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="bg-light py-3 shadow-sm mb-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-2">
+            <img src="image/Logo.png" alt="SDG 12 Logo" width="40" height="40">
+            <h1 class="h5 mb-0">SDG 12: Responsible Consumption and Production</h1>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Targets</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="food.html">Food</a></li>
+                        <li><a class="dropdown-item" href="energy.html">Energy</a></li>
+                        <li><a class="dropdown-item active" href="water.html">Water</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="container my-5">
+
+<h2 class="text-center mb-4"><strong>Water Conservation & Responsible Use</strong></h2>
+<p class="mb-4">
+    Water conservation is essential to Responsible Consumption and Production (SDG 12).
+    Every product we use requires water at some stage of its production.
+    Unsustainable water use leads to scarcity, pollution, ecosystem damage, and economic loss.
+</p>
+
+<!-- UPDATED: Latest statistics with source -->
+<div class="alert alert-info mb-4">
+    <strong>2024 Global Update:</strong> As of 2024, <strong>2.1 billion people</strong> (26% of the global population) 
+    still lacked safely managed drinking water services, including <strong>106 million</strong> who drink directly from 
+    surface water sources. Global coverage improved from 68% in 2015 to 74% in 2024.
+    <br><small class="text-muted">Source: WHO/UNICEF Joint Monitoring Programme (JMP) Report 2025, published August 26, 2025 
+    | <a href="https://data.unicef.org/resources/jmp-report-2025/" target="_blank" class="text-decoration-none">View Report →</a></small>
+</div>
+
+<!-- CAROUSEL -->
+<div id="food-carousel" class="carousel slide mb-5" 
+         data-bs-ride="carousel" 
+         data-bs-interval="3000">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-image-frame">
+                    <img src="image/water1.jpg" 
+                         class="d-block" 
+                         alt="Food preservation methods">
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel-image-frame">
+                    <img src="image/water2.jpeg" 
+                         class="d-block" 
+                         alt="Sustainable food practices">
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" 
+                data-bs-target="#food-carousel" 
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-label="Previous"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" 
+                data-bs-target="#food-carousel" 
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-label="Next"></span>
+        </button>
+    </div>
+
+<hr style="border: 1px solid #444;">
+
+
+<!-- IMPORTANCE -->
+<section class="mb-5">
+  <h3>Why Water Conservation Matters</h3>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <p>
+       Water is fundamental to all life and economic activity. Conserving water ensures availability for households, 
+       agriculture, industry, and future generations. Despite progress, billions still lack access to safe water.
+      </p>
+      <ul>
+        <li><strong>Protects freshwater ecosystems</strong> and biodiversity</li>
+        <li><strong>Reduces energy demand</strong> for water treatment and distribution</li>
+        <li><strong>Supports food security</strong> through sustainable agriculture</li>
+        <li><strong>Prevents water-related diseases</strong> that affect millions</li>
+        <li><strong>Ensures equitable access</strong> for all communities</li>
+      </ul>
+      
+      <!-- UPDATED: Added local research context -->
+      <div class="alert alert-warning mt-3">
+        <strong>Local Research Finding:</strong> Studies near WVSU Janiuay Campus show that 73% of households 
+        are aware of water-saving practices, and 61% actively implement them by fixing leaks and minimizing 
+        water use during cleaning. However, many report difficulty adopting conservation habits due to lack 
+        of awareness or inconsistent household routines.
+      </div>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="image/clean-water.jpg" width="350" height="180" class="img-fluid rounded" 
+           alt="Clean water access for communities">
+    </div>
+  </div>
+</section>
+
+<hr style="border: 1px solid #444;">
+
+
+<!-- UPDATED: Water Users by Sector -->
+<h3>Major Water Consumers by Sector (Global Averages)</h3>
+<div class="table-responsive">
+    <table class="table table-striped mb-4">
+        <thead>
+            <tr>
+                <th>Sector</th>
+                <th>Share of Global Use</th>
+                <th>Main Challenge</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Agriculture</td>
+                <td>~70%</td>
+                <td>Inefficient irrigation, water waste</td>
+            </tr>
+            <tr>
+                <td>Industry</td>
+                <td>~20%</td>
+                <td>Pollution, high consumption in manufacturing</td>
+            </tr>
+            <tr>
+                <td>Households</td>
+                <td>~10%</td>
+                <td>Leaks, overconsumption, lack of awareness</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p class="small text-muted">Sources: FAO (Agriculture), UNEP (Industry), WHO/UNICEF (Households) 
+| <a href="https://www.fao.org" target="_blank">fao.org</a></p>
+
+<hr style="border: 1px solid #444;">
+
+
+<!-- PRACTICAL ACTIONS -->
+<h3 class="mb-4">Practical Ways to Preserve Water</h3>
+<div class="row g-4 text-center">
+
+    <!-- CARD 1 -->
+    <div class="col-md-4 d-flex">
+        <div class="summary-card w-100">
+            <img src="image/fixing_water_leaks.jpg"
+                 class="img-fluid rounded mx-auto d-block"
+                 style="width:200px;height:150px;object-fit:cover;"
+                 alt="Fixing household water leaks">
+            <h5 class="mt-3"><strong>Households</strong></h5>
+            <p>
+                Fix leaks immediately, turn off taps when not needed, install 
+                water-efficient fixtures (low-flow showerheads, dual-flush toilets), 
+                and use appliances fully loaded to reduce household water waste.
+            </p>
+        </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-md-4 d-flex">
+        <div class="summary-card w-100">
+            <img src="image/drip-irrigation.jpg"
+                 class="img-fluid rounded mx-auto d-block"
+                 style="width:200px;height:150px;object-fit:cover;"
+                 alt="Drip irrigation system">
+            <h5 class="mt-3"><strong>Agriculture</strong></h5>
+            <p>
+                Drip irrigation, soil-moisture monitoring, and rainwater harvesting 
+                reduce water waste while maintaining or improving crop yields. 
+                Precision agriculture optimizes water use.
+            </p>
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-md-4 d-flex">
+        <div class="summary-card w-100">
+            <img src="image/closed-loop.webp"
+                 class="img-fluid rounded mx-auto d-block"
+                 style="width:200px;height:150px;object-fit:cover;"
+                 alt="Industrial water recycling">
+            <h5 class="mt-3"><strong>Industry</strong></h5>
+            <p>
+                Closed-loop water systems, wastewater treatment and recycling, 
+                and process optimization minimize freshwater extraction and 
+                reduce pollution from industrial activities.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<hr style="border: 1px solid #444;">
+
+
+<!-- UPDATED: Progress Indicators with 2024 data -->
+<h3>Water Conservation Progress (2015–2024)</h3>
+<p>
+    Progress toward SDG 12 water targets is monitored using efficiency improvements,
+    wastewater reuse, and public awareness indicators tracked by international agencies.
+</p>
+
+<div class="mb-4">
+    <label class="fw-bold">Water-Use Efficiency Improvement (%)</label>
+    <div class="d-flex align-items-center mb-2">
+        <span class="chart-year">2015</span>
+        <div class="progress flex-grow-1">
+            <div class="progress-bar" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center mb-2">
+        <span class="chart-year">2018</span>
+        <div class="progress flex-grow-1">
+            <div class="progress-bar" style="width:38%" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100">38%</div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center mb-2">
+        <span class="chart-year">2021</span>
+        <div class="progress flex-grow-1">
+            <div class="progress-bar" style="width:52%" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100">52%</div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center">
+        <span class="chart-year">2024</span>
+        <div class="progress flex-grow-1">
+            <div class="progress-bar" style="width:65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-4">
+    <label class="fw-bold">Wastewater Reuse Adoption (%)</label>
+    <div class="d-flex align-items-center mb-2">
+        <span class="chart-year">2015</span>
+        <div class="progress flex-grow-1">
+            <div class="progress-bar bg-success" style="width:15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center mb-2">
+        <span class="chart-year">2018</span>
+        <div class="progress flex-grow-1">
+            <div class="progress-bar bg-success" style="width:27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100">27%</div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center mb-2">
+        <span class="chart-year">2021</span>
+        <div class="progress flex-grow-1">
+            <div class="progress-bar bg-success" style="width:39%" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100">39%</div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center">
+        <span class="chart-year">2024</span>
+        <div class="progress flex-grow-1">
+            <div class="progress-bar bg-success" style="width:48%" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">48%</div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-5">
+    <label class="fw-bold">Public Awareness & Conservation Programs (%)</label>
+    <div class="d-flex align-items-center mb-2">
+        <span class="chart-year">2015</span>
+        <div class="progress flex-grow-1">
+            <div class="progress-bar bg-info" style="width:30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center mb-2">
+        <span class="chart-year">2018</span>
+        <div class="progress flex-grow-1">
+            <div class="progress-bar bg-info" style="width:46%" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">46%</div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center mb-2">
+        <span class="chart-year">2021</span>
+        <div class="progress flex-grow-1">
+            <div class="progress-bar bg-info" style="width:61%" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100">61%</div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center">
+        <span class="chart-year">2024</span>
+        <div class="progress flex-grow-1">
+            <div class="progress-bar bg-info" style="width:72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">72%</div>
+        </div>
+    </div>
+</div>
+
+<hr style="border: 1px solid #444;">
+
+
+<!-- AGENCIES -->
+<h3>Insights from International Agencies</h3>
+
+<div class="accordion mb-5" id="waterAccordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#who">
+                WHO – Water & Public Health
+            </button>
+        </h2>
+        <div id="who" class="accordion-collapse collapse" data-bs-parent="#waterAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li>WHO emphasizes water efficiency as a key factor in preventing disease, reducing healthcare costs, and improving overall public health.</li>
+                    <li>The World Health Organization sets standards and guidelines for drinking-water quality, and provides technical support to countries to improve water treatment and management.</li>
+                    <li>WHO promotes access to sanitation facilities, and advocates for handwashing with soap and water to prevent the spread of diseases.</li>
+                    <li>The organization addresses the impact of climate change on water security and public health, including the increased risk of water scarcity and water-related disasters.</li>
+                    <li><strong>2024 Finding:</strong> 1 in 4 people globally still lack access to safe drinking water, with significant disparities between urban and rural areas.</li>
+                </ul>
+                <p class="small text-muted">Source: <a href="https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health" target="_blank">WHO Water & Sanitation</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#unesco">
+                UNESCO – Climate Change & Water
+            </button>
+        </h2>
+        <div id="unesco" class="accordion-collapse collapse" data-bs-parent="#waterAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li>Climate-driven rainfall changes increase droughts and floods, making sustainable water use essential for resilience.</li>
+                    <li>UNESCO supports research and development of innovative solutions for water management, including technologies for water conservation and efficient use.</li>
+                    <li>The organization promotes education and awareness-raising on climate change and water issues, including the importance of water conservation and sustainable management.</li>
+                    <li>Through its Intergovernmental Hydrological Programme, UNESCO fosters international cooperation on water issues, including the management of transboundary water resources.</li>
+                </ul>
+                <p class="small text-muted">Source: <a href="https://www.unesco.org" target="_blank">UNESCO Water Programme</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#worldbank">
+                World Bank – Economic Impact
+            </button>
+        </h2>
+        <div id="worldbank" class="accordion-collapse collapse" data-bs-parent="#waterAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li>Water efficiency investments generate long-term economic benefits and reduce future infrastructure costs.</li>
+                    <li>The World Bank estimates that climate change could push an additional 100 million people into poverty by 2030, with water scarcity and decreased agricultural productivity being major factors.</li>
+                    <li>Water scarcity could lead to a 6% decline in global GDP by 2050, with the most vulnerable populations being those in low-income countries.</li>
+                    <li>Investing in water management and climate resilience can have significant economic benefits, with every dollar invested generating an estimated $4 in economic returns.</li>
+                    <li>The bank provides financing and technical assistance to help countries adapt to the economic impacts of climate change.</li>
+                </ul>
+                <p class="small text-muted">Source: <a href="https://www.worldbank.org" target="_blank">World Bank Water</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr style="border: 1px solid #444;">
+    <!-- Video Section -->
+        <h3 class="text-center mb-5"><strong>Saving Water</strong></h3>
+            <div class="video-wrapper">
+                <video controls>
+                <source src="video/What_Water_Conservation_Practices_Lower_High_Household_Bills__-_Ecosystem_Essentials(480p).mp4" type="video/mp4">
+                </video>
+            </div>
+        <style>
+
+        .video-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .video-wrapper video {
+            width: 80%;        /* Adjust size */
+            max-width: 800px;  /* Maximum width */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        </style>
+        <p class="small text-muted">Source: <a href="https://youtu.be/sek6Rj69DOI?si=Wl1EiYfi9a_lZyjA" target="_blank">Saving Water</a></p>
+
+
+<!-- CALL TO ACTION -->
+<section class="cta-section text-center mt-5">
+    <h3>Be Part of the SDG 12 Movement</h3>
+    <p>
+        Responsible consumption starts with informed choices.  
+        Apply what you've learned today and inspire others to conserve water.
+    </p>
+
+    <div class="d-flex justify-content-center gap-3 mt-3">
+        <a href="food.html" class="btn btn-outline-success">Food Conservation</a>
+        <a href="energy.html" class="btn btn-outline-warning">Energy Conservation</a>
+    </div>
+</section>
+
+<!-- DATA SOURCE FOOTER -->
+<footer class="sdg-footer mt-5 p-4 bg-light rounded">
+    <p class="mb-2"><strong>Data Sources for This Page:</strong></p>
+    <ul class="list-unstyled small">
+        <li>• WHO/UNICEF (2025). Progress on Household Drinking Water, Sanitation and Hygiene 2000-2024. Published August 26, 2025. 
+          <a href="https://data.unicef.org/resources/jmp-report-2025/" target="_blank">View Report</a></li>
+        <li>• PSA. Water use in agriculture. <a href="https://psa.gov.ph/content/countrys-water-use-efficiency-reached-php-23136-cubic-meter-2024?utm" target="_blank">psa.gov</a></li>
+        <li>• WHO Water & Sanitation. <a href="https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health" target="_blank">who.int</a></li>
+        <li>• UNESCO Water Programme. <a href="https://www.unesco.org" target="_blank">unesco.org</a></li>
+        <li>• World Bank Water Resources. <a href="https://www.worldbank.org" target="_blank">worldbank.org</a></li>
+        <li>• Local research from WVSU Janiuay Campus household study (2024)</li>
+    </ul>
+    <p style="text-align: center;" class="small text-muted mb-0">This content supports <strong>UN Sustainable Development Goal 12</strong> | Last Updated: June 2025</p>
+</footer>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
